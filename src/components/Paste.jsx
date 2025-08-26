@@ -96,7 +96,7 @@ const Paste = () => {
                   
                   {/* Buttons row */}
                   <div className="flex gap-2 flex-wrap sm:flex-nowrap">
-                    {/* 📝 Edit Button */}
+                    {/*  Edit Button */}
                     <button className="p-2 rounded-[0.2rem] bg-gray hover:bg-transparent group hover:border-blue-500">
                       <a href={`/?pasteId=${paste?._id}`}>
                         <PencilLine
@@ -106,7 +106,7 @@ const Paste = () => {
                       </a>
                     </button>
 
-                    {/* 📋 Copy Button */}
+                    {/*  Copy Button */}
                     <button
                       className="p-2 rounded-[0.2rem] bg-gray hover:bg-transparent group hover:border-yellow-500"
                       onClick={() => {
@@ -120,7 +120,7 @@ const Paste = () => {
                       />
                     </button>
 
-                    {/* ⬇️ Download Button */}
+                    {/*  Download Button */}
                     <button
                       onClick={() => handleDownload(paste)}
                       className="p-2 rounded-[0.2rem] bg-gray hover:bg-transparent group hover:border-green-500"
@@ -131,7 +131,7 @@ const Paste = () => {
                       />
                     </button>
 
-                    {/* ❌ Delete Button */}
+                    {/* Delete Button */}
                     <button
                       onClick={() => handleDelete(paste?._id)}
                       className="p-2 rounded-[0.2rem] bg-gray hover:bg-transparent group hover:border-red-500"
