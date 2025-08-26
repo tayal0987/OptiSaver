@@ -53,29 +53,29 @@ const Home = () => {
 
   return (
     <div>
-      <div className="flex flex-row gap-7 place-content-between">
-        <input
-          className="rounded-2xl w-full pl-5 mt-6"
-          type="text"
-          placeholder="Enter Title Here"
-          value={title}
-          onChange={(e) => setTitle(e.target.value)}
-        />
+     <div className="flex flex-col md:flex-row gap-4 md:gap-7 md:place-content-between">
+  <input
+    className="rounded-2xl w-full pl-5 mt-4 md:mt-6"
+    type="text"
+    placeholder="Enter Title Here"
+    value={title}
+    onChange={(e) => setTitle(e.target.value)}
+  />
 
-        <button onClick={createpaste} className="rounded-2xl mt-7">
-          {pasteId ? "Update" : "Create"}
-        </button>
-      </div>
+  <button onClick={createpaste} className="rounded-2xl mt-4 md:mt-7 px-4 py-2">
+    {pasteId ? "Update" : "Create"}
+  </button>
+</div>
 
-      <div className="mt-8">
-        <textarea
-          className="rounded-2xl w-full p-4 pl-5"
-          value={value}
-          placeholder="Enter Content Here"
-          onChange={(e) => setValue(e.target.value)}
-          rows={20}
-        />
-      </div>
+<div className="mt-6 md:mt-8">
+  <textarea
+    className="rounded-2xl w-full p-4 pl-5"
+    value={value}
+    placeholder="Enter Content Here"
+    onChange={(e) => setValue(e.target.value)}
+    rows={10}
+  />
+</div>
     </div>
   );
 };

@@ -13,16 +13,12 @@ const ViewPaste = () => {
   }
 
   return (
-    <div className="p-5 max-w-4xl mx-auto">
-      
-      {/* Title */}
-      <h1 className="text-center text-3xl mb-5">{paste.title}</h1>
-
-      {/* Content */}
-      <div className="border p-3 rounded-lg bg-gray text-gray-200 whitespace-pre-wrap">
-        {paste.content}
-      </div>
-    </div>
+   <div className="p-3 sm:p-5 max-w-full md:max-w-4xl mx-auto">
+  <h1 className="text-center text-xl sm:text-2xl md:text-3xl mb-4">{paste.title}</h1>
+  <div className="border p-3 rounded-lg bg-gray text-gray-200 whitespace-pre-wrap text-sm sm:text-base">
+    {paste.content}
+  </div>
+</div>
   );
 };
 
